@@ -29,6 +29,9 @@ crossorigin="anonymous">
  <th>Nome</th>
  <th>Preço</th>
  <th>Categoria</th>
+  <th>Descrição</th>
+ 
+  
  </tr>
  </thead>
  <tbody>
@@ -43,6 +46,8 @@ crossorigin="anonymous">
  <td th:text="'R$ ' + $
 {#numbers.formatDecimal(produto.preco, 1, 2)}">0,00</td>
  <td th:text="${produto.categoria}">Categoria</td>
+  <td th:text="${produto.descrição}">descrição</td>
+
  </tr>
  </tbody>
  </table>
