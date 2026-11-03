@@ -2,7 +2,8 @@ package com.example.cadastroprodutos.model;
 public class Produto {
  private String nome; // nome do produto
  private double preco; // preço em reais
- private String categoria; // ex: Eletrônico, Vestuário
+ private String categoria;
+ private Strin descrição; // ex: Eletrônico, Vestuário
  // Construtor vazio — obrigatório para o Thymeleaf funcionar
  public Produto() {
  }
@@ -14,4 +15,6 @@ public class Produto {
  public String getCategoria() { return categoria; }
  public void setCategoria(String categoria) { this.categoria =
 categoria; }
+public String get descrição() { return  descrição; }
+
 }
